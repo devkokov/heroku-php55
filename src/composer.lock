@@ -18,10 +18,10 @@
         },
         {
             "name": "heroku-sys/apache",
-            "version": "2.4.37",
+            "version": "2.4.41",
             "dist": {
                 "type": "heroku-sys-tar",
-                "url": "https://lang-php.s3.amazonaws.com/dist-cedar-14-stable/apache-2.4.37.tar.gz",
+                "url": "https://lang-php.s3.amazonaws.com/dist-cedar-14-stable/apache-2.4.41.tar.gz",
                 "reference": null,
                 "shasum": null
             },
@@ -62,10 +62,10 @@
         },
         {
             "name": "heroku-sys/nginx",
-            "version": "1.8.1",
+            "version": "1.16.1",
             "dist": {
                 "type": "heroku-sys-tar",
-                "url": "https://lang-php.s3.amazonaws.com/dist-cedar-14-stable/nginx-1.8.1.tar.gz",
+                "url": "https://lang-php.s3.amazonaws.com/dist-cedar-14-stable/nginx-1.16.1.tar.gz",
                 "reference": null,
                 "shasum": null
             },
