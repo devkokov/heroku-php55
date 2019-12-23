@@ -1,0 +1,214 @@
+[
+    {
+        "name": "heroku/installer-plugin",
+        "version": "1.3.0",
+        "version_normalized": "1.3.0.0",
+        "dist": {
+            "type": "path",
+            "url": "/tmp/buildpacks/custom/support/installer",
+            "reference": "3a0256f1b878c64526a1261f70ce72efc4ce6d9e",
+            "shasum": null
+        },
+        "require": {
+            "composer-plugin-api": "^1.0.0"
+        },
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Heroku\\Buildpack\\PHP\\ComposerInstallerPlugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Heroku\\Buildpack\\PHP\\": "src/"
+            }
+        },
+        "transport-options": {
+            "symlink": false
+        }
+    },
+    {
+        "name": "heroku-sys/php",
+        "version": "5.5.38",
+        "version_normalized": "5.5.38.0",
+        "dist": {
+            "type": "heroku-sys-tar",
+            "url": "https://lang-php.s3.amazonaws.com/dist-cedar-14-stable/php-5.5.38.tar.gz",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "heroku-sys/cedar": "^14.0.0",
+            "heroku/installer-plugin": "^1.2.0"
+        },
+        "conflict": {
+            "heroku-sys/hhvm": "*"
+        },
+        "replace": {
+            "heroku-sys/ext-bcmath": "0",
+            "heroku-sys/ext-bz2": "0",
+            "heroku-sys/ext-calendar": "0",
+            "heroku-sys/ext-ctype": "0",
+            "heroku-sys/ext-curl": "0",
+            "heroku-sys/ext-date": "self.version",
+            "heroku-sys/ext-dom": "20031129",
+            "heroku-sys/ext-ereg": "0",
+            "heroku-sys/ext-exif": "0",
+            "heroku-sys/ext-fileinfo": "1.0.5",
+            "heroku-sys/ext-filter": "0.11.0",
+            "heroku-sys/ext-ftp": "0",
+            "heroku-sys/ext-gd": "0",
+            "heroku-sys/ext-gettext": "0",
+            "heroku-sys/ext-gmp": "0",
+            "heroku-sys/ext-hash": "1.0",
+            "heroku-sys/ext-iconv": "0",
+            "heroku-sys/ext-imap": "0",
+            "heroku-sys/ext-intl": "1.1.0",
+            "heroku-sys/ext-json": "1.2.1",
+            "heroku-sys/ext-ldap": "0",
+            "heroku-sys/ext-libxml": "0",
+            "heroku-sys/ext-mbstring": "0",
+            "heroku-sys/ext-mcrypt": "0",
+            "heroku-sys/ext-mysql": "1.0",
+            "heroku-sys/ext-mysqli": "0.1",
+            "heroku-sys/ext-mysqlnd": "0",
+            "heroku-sys/ext-openssl": "0",
+            "heroku-sys/ext-pcntl": "0",
+            "heroku-sys/ext-pcre": "0",
+            "heroku-sys/ext-pdo": "1.0.4dev",
+            "heroku-sys/ext-pdo_mysql": "1.0.2",
+            "heroku-sys/ext-pdo_pgsql": "1.0.2",
+            "heroku-sys/ext-pdo_sqlite": "1.0.1",
+            "heroku-sys/ext-pgsql": "0",
+            "heroku-sys/ext-phar": "2.0.2",
+            "heroku-sys/ext-posix": "0",
+            "heroku-sys/ext-readline": "self.version",
+            "heroku-sys/ext-reflection": "0",
+            "heroku-sys/ext-session": "0",
+            "heroku-sys/ext-shmop": "0",
+            "heroku-sys/ext-simplexml": "0.1",
+            "heroku-sys/ext-soap": "0",
+            "heroku-sys/ext-sockets": "0",
+            "heroku-sys/ext-spl": "0.2",
+            "heroku-sys/ext-sqlite3": "0.7-dev",
+            "heroku-sys/ext-tokenizer": "0.1",
+            "heroku-sys/ext-xml": "0",
+            "heroku-sys/ext-xmlreader": "0.1",
+            "heroku-sys/ext-xmlrpc": "0.51",
+            "heroku-sys/ext-xmlwriter": "0.1",
+            "heroku-sys/ext-xsl": "0.1",
+            "heroku-sys/ext-zend-opcache": "7.0.6",
+            "heroku-sys/ext-zip": "1.11.0",
+            "heroku-sys/ext-zlib": "2.0",
+            "heroku-sys/php-64bit": "self.version"
+        },
+        "time": "2016-07-21T11:44:23+00:00",
+        "type": "heroku-sys-php",
+        "extra": {
+            "export": "bin/export.php.sh",
+            "profile": "bin/profile.php.sh",
+            "shared": {
+                "heroku-sys/ext-bcmath": true,
+                "heroku-sys/ext-calendar": true,
+                "heroku-sys/ext-exif": true,
+                "heroku-sys/ext-ftp": true,
+                "heroku-sys/ext-gd": true,
+                "heroku-sys/ext-gettext": true,
+                "heroku-sys/ext-gmp": true,
+                "heroku-sys/ext-imap": true,
+                "heroku-sys/ext-intl": true,
+                "heroku-sys/ext-ldap": true,
+                "heroku-sys/ext-mbstring": true,
+                "heroku-sys/ext-mysql": true,
+                "heroku-sys/ext-pcntl": true,
+                "heroku-sys/ext-pdo_sqlite": true,
+                "heroku-sys/ext-shmop": true,
+                "heroku-sys/ext-soap": true,
+                "heroku-sys/ext-sqlite3": true,
+                "heroku-sys/ext-xmlrpc": true,
+                "heroku-sys/ext-xsl": true
+            }
+        },
+        "installation-source": "dist"
+    },
+    {
+        "name": "composer.json/composer.lock",
+        "version": "dev-a1eed0a7fe3d2ad6f7adc17aa87e2255",
+        "version_normalized": "dev-a1eed0a7fe3d2ad6f7adc17aa87e2255",
+        "require": {
+            "heroku-sys/ext-gd": "*",
+            "heroku-sys/ext-mysql": "*",
+            "heroku-sys/php": "5.5.*"
+        },
+        "type": "metapackage"
+    },
+    {
+        "name": "heroku-sys/nginx",
+        "version": "1.8.1",
+        "version_normalized": "1.8.1.0",
+        "dist": {
+            "type": "heroku-sys-tar",
+            "url": "https://lang-php.s3.amazonaws.com/dist-cedar-14-stable/nginx-1.8.1.tar.gz",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "heroku-sys/cedar": "^14.0.0",
+            "heroku/installer-plugin": "^1.2.0"
+        },
+        "time": "2018-07-09T18:44:52+00:00",
+        "type": "heroku-sys-webserver",
+        "extra": {
+            "export": "bin/export.nginx.sh",
+            "profile": "bin/profile.nginx.sh"
+        },
+        "installation-source": "dist"
+    },
+    {
+        "name": "heroku-sys/apache",
+        "version": "2.4.37",
+        "version_normalized": "2.4.37.0",
+        "dist": {
+            "type": "heroku-sys-tar",
+            "url": "https://lang-php.s3.amazonaws.com/dist-cedar-14-stable/apache-2.4.37.tar.gz",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "heroku-sys/cedar": "^14.0.0",
+            "heroku/installer-plugin": "^1.2.0"
+        },
+        "time": "2018-11-08T04:38:11+00:00",
+        "type": "heroku-sys-webserver",
+        "extra": {
+            "export": "bin/export.apache2.sh",
+            "profile": "bin/profile.apache2.sh"
+        },
+        "installation-source": "dist"
+    },
+    {
+        "name": "heroku-sys/ext-newrelic",
+        "version": "8.4.0.231",
+        "version_normalized": "8.4.0.231",
+        "dist": {
+            "type": "heroku-sys-tar",
+            "url": "https://lang-php.s3.amazonaws.com/dist-cedar-14-stable/extensions/no-debug-non-zts-20121212/newrelic-8.4.0.231.tar.gz",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "heroku-sys/cedar": "^14.0.0",
+            "heroku-sys/php": "5.5.*",
+            "heroku/installer-plugin": "^1.2.0"
+        },
+        "conflict": {
+            "heroku-sys/hhvm": "*"
+        },
+        "time": "2018-12-12T01:00:46+00:00",
+        "type": "heroku-sys-php-extension",
+        "extra": {
+            "config": "etc/php/conf.d/newrelic.ini-dist",
+            "profile": "bin/profile.newrelic.sh"
+        },
+        "installation-source": "dist"
+    }
+]
