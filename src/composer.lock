@@ -38,10 +38,10 @@
         },
         {
             "name": "heroku-sys/ext-newrelic",
-            "version": "8.4.0.231",
+            "version": "8.7.0.242",
             "dist": {
                 "type": "heroku-sys-tar",
-                "url": "https://lang-php.s3.amazonaws.com/dist-cedar-14-stable/extensions/no-debug-non-zts-20121212/newrelic-8.4.0.231.tar.gz",
+                "url": "https://lang-php.s3.amazonaws.com/dist-cedar-14-stable/extensions/no-debug-non-zts-20121212/newrelic-8.7.0.242.tar.gz",
                 "reference": null,
                 "shasum": null
             },
